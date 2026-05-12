@@ -1,6 +1,12 @@
 @import "tailwindcss";
 @import "remixicon/fonts/remixicon.css";
 
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 @theme {
   --animate-bounce-slow: bounce-slow 3s linear infinite;
   --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;

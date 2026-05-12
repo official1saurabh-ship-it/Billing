@@ -1,6 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 const HeroPage = () => {
+    const navigate = useNavigate();
+
     const featuresData = [
         {
             icon: "📊",
@@ -100,7 +104,7 @@ const HeroPage = () => {
                 {/* Background Decorative Circles */}
                 <div className="absolute top-[-200px] right-[-200px] w-[700px] h-[700px] rounded-full bg-[radial-gradient(circle,rgba(200,32,45,0.06)_0%,transparent_70%)] pointer-events-none"></div>
                 <div className="absolute bottom-[-100px] left-[-100px] w-[500px] h-[500px] rounded-full bg-[radial-gradient(circle,rgba(200,149,42,0.08)_0%,transparent_70%)] pointer-events-none"></div>
-
+                {/* {banner} */}
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full relative z-10">
                     {/* Left Side: Content */}
                     <div className="flex flex-col items-start text-left">
@@ -121,12 +125,12 @@ const HeroPage = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-wrap gap-4 mb-10">
-                            <button className="bg-gradient-to-r from-[#C8202D] to-[#E52D27] text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center gap-2">
+                            <a href="#signup" className="bg-gradient-to-r from-[#C8202D] to-[#E52D27] text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center gap-2 no-underline">
                                 🚀 Start Free Trial
-                            </button>
-                            <button className="bg-white text-gray-800 border-1.5 border-gray-200 px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:-translate-y-0.5 hover:border-[#C8952A] hover:text-[#C8952A] hover:shadow-[0_4px_20px_rgba(200,149,42,0.15)] flex items-center gap-2">
+                            </a>
+                            <a href="#contact" className="bg-white text-gray-800 border border-gray-200 px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:-translate-y-0.5 hover:border-[#C8952A] hover:text-[#C8952A] hover:shadow-[0_4px_20px_rgba(200,149,42,0.15)] flex items-center gap-2 no-underline">
                                 ▶ Book a Demo
-                            </button>
+                            </a>
                         </div>
 
                         {/* Feature Badges */}
@@ -522,7 +526,7 @@ const HeroPage = () => {
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> 1 User Access</li>
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> Offline Mode</li>
                             </ul>
-                            <button className="w-full py-3 rounded-xl border border-gray-200 font-bold text-gray-800 hover:border-red-500 hover:text-red-500 transition">Get Started</button>
+                            <a href="#signup" className="block w-full py-3 rounded-xl border border-gray-200 font-bold text-gray-800 hover:border-red-500 hover:text-red-500 transition text-center no-underline">Get Started</a>
                         </div>
                         <div className="bg-white rounded-3xl border-2 border-red-500 p-8 shadow-2xl scale-105 relative z-10">
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-1 rounded-full text-xs font-bold whitespace-nowrap">⭐ Most Popular</div>
@@ -537,7 +541,7 @@ const HeroPage = () => {
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> UPI / QR Payment Collection</li>
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> 3 User Access</li>
                             </ul>
-                            <button className="w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-red-800 text-white font-bold shadow-lg hover:shadow-xl transition">Start Free Trial</button>
+                            <a href="#signup" className="block w-full py-3 rounded-xl bg-gradient-to-r from-red-600 to-red-800 text-white font-bold shadow-lg hover:shadow-xl transition text-center no-underline">Start Free Trial</a>
                         </div>
                         <div className="bg-white rounded-3xl border border-gray-200 p-8 shadow-sm hover:shadow-xl transition-all duration-300">
                             <h3 className="text-xl font-bold text-gray-500 mb-2">Business</h3>
@@ -550,7 +554,7 @@ const HeroPage = () => {
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> Online Store Integration</li>
                                 <li className="flex items-center gap-3 text-sm text-gray-700"><span className="text-green-500 font-bold">✓</span> Dedicated Account Manager</li>
                             </ul>
-                            <button className="w-full py-3 rounded-xl border border-gray-200 font-bold text-gray-800 hover:border-red-500 hover:text-red-500 transition">Contact Sales</button>
+                            <a href="#contact" className="block w-full py-3 rounded-xl border border-gray-200 font-bold text-gray-800 hover:border-red-500 hover:text-red-500 transition text-center no-underline">Contact Sales</a>
                         </div>
                     </div>
                 </div>
@@ -590,6 +594,116 @@ const HeroPage = () => {
                 </div>
             </section>
 
+            {/* Contact Section */}
+            <section className="bg-white py-24 px-6" id="contact">
+                <div className="max-w-6xl mx-auto">
+                    <div className="text-center mb-16">
+                        <div className="inline-block bg-[#FEF3DC] text-[#C8952A] border border-[#F5D98B] rounded-full px-4 py-[5px] text-[0.78rem] font-bold tracking-[0.06em] uppercase mb-4">
+                            Contact Us
+                        </div>
+                        <h2 className="text-4xl font-bold text-gray-800 mb-4">Get In Touch With Us</h2>
+                        <p className="text-gray-500 text-lg">Have questions? Our team is here to help you grow your business.</p>
+                    </div>
+
+                    <div className="grid lg:grid-cols-2 gap-16 items-start">
+                        {/* Contact Form */}
+                        <div className="bg-[#FFF9F0] rounded-[30px] p-8 md:p-10 border border-gray-200 shadow-sm">
+                            <form className="space-y-6">
+                                <div className="grid md:grid-cols-2 gap-6">
+                                    <div className="space-y-2">
+                                        <label className="text-sm font-semibold text-gray-700 ml-1">Full Name</label>
+                                        <input type="text" placeholder="John Doe" className="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-[#C8202D] focus:ring-2 focus:ring-[#C8202D]/10 outline-none transition" />
+                                    </div>
+                                    <div className="space-y-2">
+                                        <label className="text-sm font-semibold text-gray-700 ml-1">Phone Number</label>
+                                        <input type="tel" placeholder="+91 98765 43210" className="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-[#C8202D] focus:ring-2 focus:ring-[#C8202D]/10 outline-none transition" />
+                                    </div>
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-semibold text-gray-700 ml-1">Email Address</label>
+                                    <input type="email" placeholder="john@example.com" className="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-[#C8202D] focus:ring-2 focus:ring-[#C8202D]/10 outline-none transition" />
+                                </div>
+                                <div className="space-y-2">
+                                    <label className="text-sm font-semibold text-gray-700 ml-1">Message</label>
+                                    <textarea rows="4" placeholder="How can we help you?" className="w-full px-5 py-3.5 rounded-xl border border-gray-200 focus:border-[#C8202D] focus:ring-2 focus:ring-[#C8202D]/10 outline-none transition resize-none"></textarea>
+                                </div>
+                                <button className="w-full bg-gradient-to-r from-red-600 to-red-800 text-white py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-0.5 transition-all">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+
+                        {/* Contact Info */}
+                        <div className="space-y-10">
+                            <div className="space-y-8">
+                                <div className="flex gap-5">
+                                    <div className="w-14 h-14 rounded-2xl bg-red-100 flex items-center justify-center text-red-600 text-2xl flex-shrink-0">
+                                        📍
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800 text-xl mb-1">Our Office</h4>
+                                        <a
+                                            href="https://www.google.com/maps/search/?api=1&query=MG+Road+Bengaluru+Karnataka+India"
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="text-gray-500 leading-relaxed hover:text-[#C8202D] transition-colors no-underline"
+                                        >
+                                            123 Business Hub, MG Road, <br />Bengaluru, Karnataka 560001, India
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-5">
+                                    <div className="w-14 h-14 rounded-2xl bg-orange-100 flex items-center justify-center text-orange-600 text-2xl flex-shrink-0">
+                                        📞
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800 text-xl mb-1">Call Us</h4>
+                                        <p className="text-gray-500">Sales: +91 1800-000-0000 (Toll Free)</p>
+                                        <p className="text-gray-500">Support: +91 98765 43210</p>
+                                    </div>
+                                </div>
+
+                                <div className="flex gap-5">
+                                    <div className="w-14 h-14 rounded-2xl bg-yellow-100 flex items-center justify-center text-yellow-600 text-2xl flex-shrink-0">
+                                        ✉️
+                                    </div>
+                                    <div>
+                                        <h4 className="font-bold text-gray-800 text-xl mb-1">Email Us</h4>
+                                        <p className="text-gray-500">support@billingmitra.com</p>
+                                        <p className="text-gray-500">sales@billingmitra.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Real Google Map Embed */}
+                            <div className="h-[300px] w-full rounded-[30px] overflow-hidden border border-gray-200 shadow-inner group relative">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.925562725458!2d77.6019688!3d12.9763784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1679093e0987%3A0x6a2c3098e6c7104b!2sMG%20Road%2C%20Bengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1715525500000!5m2!1sen!2sin"
+                                    className="w-full h-full border-0 grayscale hover:grayscale-0 transition-all duration-700"
+                                    allowFullScreen=""
+                                    loading="lazy"
+                                    referrerPolicy="no-referrer-when-downgrade"
+                                    title="Billing Mitra Office Location"
+                                ></iframe>
+
+                                {/* View on Google Maps Button */}
+                                <a
+                                    href="https://www.google.com/maps/search/?api=1&query=MG+Road+Bengaluru+Karnataka+India"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="absolute bottom-4 right-4 bg-white/90 backdrop-blur-sm border border-gray-200 px-4 py-2 rounded-lg text-sm font-bold text-gray-800 shadow-lg hover:bg-white hover:text-[#C8202D] transition-all no-underline flex items-center gap-2"
+                                >
+                                    <span>📍 View on Google Maps</span>
+                                </a>
+
+                                <div className="absolute inset-0 bg-transparent pointer-events-none group-hover:pointer-events-auto"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             {/* Final CTA Section */}
             <div className="bg-gradient-to-br from-red-600 to-red-800 py-24 px-6 text-center text-white relative overflow-hidden" id="signup">
                 <div className="absolute top-0 left-0 w-full h-full opacity-10 pointer-events-none">
@@ -600,16 +714,18 @@ const HeroPage = () => {
                     <h2 className="text-4xl md:text-5xl font-extrabold mb-6">Start Managing Your Business Smarter Today</h2>
                     <p className="text-red-100 text-xl mb-10 max-w-2xl mx-auto">Join 10,000+ Indian businesses already saving time, reducing errors, and staying GST-compliant with Billing Mitra.</p>
                     <div className="flex flex-wrap justify-center gap-4">
-                        <button className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-105 transition">🚀 Start Free Trial — No Card Needed</button>
-                        <button className="bg-transparent border-2 border-white/60 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition">▶ Book a Free Demo</button>
+                        <a href="#signup" className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg shadow-xl hover:scale-105 transition no-underline">🚀 Start Free Trial — No Card Needed</a>
+                        <a href="#contact" className="bg-transparent border-2 border-white/60 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-white/10 transition no-underline">▶ Book a Free Demo</a>
                     </div>
                 </div>
             </div>
 
             <div className="h-1 bg-gradient-to-r from-[#C8952A] via-[#E8B84B] to-[#C8952A]"></div>
 
+
+
             {/* Footer */}
-            <footer className="bg-[#1A0500] text-gray-400 py-16 px-6" id="contact">
+            <footer className="bg-[#1A0500] text-gray-400 py-16 px-6">
                 <div className="max-w-6xl mx-auto">
                     <div className="grid md:grid-cols-4 gap-12 mb-12">
                         <div className="col-span-1 md:col-span-1">
@@ -627,37 +743,38 @@ const HeroPage = () => {
                         <div>
                             <h5 className="text-white font-bold mb-6">Product</h5>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Features</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Pricing</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Mobile App</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Desktop App</a></li>
+                                <li><a href="#features" className="hover:text-yellow-400 no-underline">Features</a></li>
+                                <li><a href="#pricing" className="hover:text-yellow-400 no-underline">Pricing</a></li>
+                                <li><a href="#signup" className="hover:text-yellow-400 no-underline">Mobile App</a></li>
+                                <li><a href="#signup" className="hover:text-yellow-400 no-underline">Desktop App</a></li>
                             </ul>
                         </div>
                         <div>
                             <h5 className="text-white font-bold mb-6">Solutions</h5>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Retail Shops</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Restaurants</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Wholesalers</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Kirana Stores</a></li>
+                                <li><a href="#features" className="hover:text-yellow-400 no-underline">Retail Shops</a></li>
+                                <li><a href="#features" className="hover:text-yellow-400 no-underline">Restaurants</a></li>
+                                <li><a href="#features" className="hover:text-yellow-400 no-underline">Wholesalers</a></li>
+                                <li><a href="#features" className="hover:text-yellow-400 no-underline">Kirana Stores</a></li>
                             </ul>
                         </div>
                         <div>
                             <h5 className="text-white font-bold mb-6">Support</h5>
                             <ul className="space-y-3 text-sm">
-                                <li><a href="#" className="hover:text-yellow-400">Help Center</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">WhatsApp Support</a></li>
-                                <li><a href="#" className="hover:text-yellow-400">Video Tutorials</a></li>
-                                <li><a href="tel:+911800000000" className="hover:text-yellow-400">1800-000-0000 (Free)</a></li>
+                                <li><a href="#contact" className="hover:text-yellow-400 no-underline">Help Center</a></li>
+                                <li><a href="https://wa.me/919876543210" className="hover:text-yellow-400 no-underline">WhatsApp Support</a></li>
+                                <li><a href="#contact" className="hover:text-yellow-400 no-underline">Video Tutorials</a></li>
+                                <li className="hover:text-yellow-400 no-underline">+91-9044425858</li>
+                                <li className="hover:text-yellow-400 no-underline">+91-6209688930</li>
                             </ul>
                         </div>
                     </div>
                     <div className="pt-8 border-t border-white/10 flex flex-wrap justify-between items-center gap-4 text-xs">
                         <p>© 2024 BillingMitra. All rights reserved. 🇮🇳 Made with ❤️ in India</p>
                         <div className="flex gap-6">
-                            <a href="#" className="hover:text-white">Privacy Policy</a>
-                            <a href="#" className="hover:text-white">Terms of Service</a>
-                            <a href="#" className="hover:text-white">Refund Policy</a>
+                            <div onClick={() => navigate("/privacy-policy")} className="hover:text-white">Privacy Policy</div>
+                            <div onClick={() => navigate("/refund-policy")} className="hover:text-white">Terms of Service</div>
+                            <div onClick={() => navigate("/terms-of-service")} className="hover:text-white">Refund Policy</div>
                         </div>
                     </div>
                 </div>
