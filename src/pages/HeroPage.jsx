@@ -537,10 +537,12 @@ const HeroPage = () => {
                         </a>
 
                         {/* Secondary Button */}
-                        <button className="border border-white/70 px-8 py-4 rounded-lg font-semibold 
-          hover:bg-white/10 transition flex items-center justify-center gap-2" id='contact'>
-                            ▶ Book a Free Demo
-                        </button>
+                        <a href="#contact">
+                            <button className="border border-white/70 px-8 py-4 rounded-lg font-semibold 
+          hover:bg-white/10 transition flex items-center justify-center gap-2" >
+                                ▶ Book a Free Demo
+                            </button>
+                        </a>
 
                     </div>
 
