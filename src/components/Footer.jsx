@@ -13,9 +13,25 @@ const Footer = () => {
                         </Link>
                         <p className="text-sm leading-relaxed mb-6">India's most trusted GST billing and business management software. Built for retailers, restaurants, wholesalers, and SMEs across India.</p>
                         <div className="flex gap-4">
-                            {['f', '𝕏', 'in', '▶', 'li'].map((social, i) => (
-                                <a key={i} href="#" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">{social}</a>
-                            ))}
+                            <a href="https://www.facebook.com/billingmitra" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">
+                                f
+                            </a>
+
+                            {/* <a href="#" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">
+                                𝕏
+                            </a> */}
+
+                            <a href="https://www.instagram.com/billingmitra/" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">
+                                in
+                            </a>
+
+                            {/* <a href="#" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">
+                                ▶
+                            </a> */}
+
+                            <a href="https://www.linkedin.com/company/billing-mitra" className="w-9 h-9 rounded-lg bg-white/5 flex items-center justify-center text-white hover:bg-red-600 transition no-underline">
+                                li
+                            </a>
                         </div>
                     </div>
                     <div>
@@ -41,8 +57,9 @@ const Footer = () => {
                         <ul className="space-y-3 text-sm list-none p-0">
                             <li><a href="/#contact" className="hover:text-yellow-400 no-underline">Help Center</a></li>
                             <li><a href="https://wa.me/919876543210" className="hover:text-yellow-400 no-underline">WhatsApp Support</a></li>
-                            <li><a href="/#contact" className="hover:text-yellow-400 no-underline">Video Tutorials</a></li>
-                            <li><a href="tel:+911800000000" className="hover:text-yellow-400 no-underline">1800-000-0000 (Free)</a></li>
+                            {/* <li><a href="/#contact" className="hover:text-yellow-400 no-underline">Video Tutorials</a></li> */}
+                            <li className="hover:text-yellow-400 no-underline">+91-9044425858</li>
+                            <li className="hover:text-yellow-400 no-underline">+91-6209688930</li>
                         </ul>
                     </div>
                 </div>

@@ -32,8 +32,8 @@ const Navbar = () => {
             </ul>
 
             <div className="flex items-center gap-3">
-                <Link to="/" className="hidden sm:inline-flex items-center border border-gray-300 rounded-lg px-4 py-2 text-sm font-medium text-[#1A0A00] hover:border-[#C8202D] hover:text-[#C8202D] transition-all no-underline">Log In</Link>
-                <a href="/#signup" className="inline-flex items-center gap-1.5 bg-gradient-to-r from-red-600 to-red-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all no-underline">
+                <Link to="https://billing.biosoftech.in/signin" className="hidden sm:inline-flex items-center border border-gray-300 rounded-lg px-4 py-2 text-sm font-medium text-[#1A0A00] hover:border-[#C8202D] hover:text-[#C8202D] transition-all no-underline">Log In</Link>
+                <a href="https://billing.biosoftech.in/register" className="inline-flex items-center gap-1.5 bg-gradient-to-r from-red-600 to-red-800 text-white px-5 py-2 rounded-lg font-semibold text-sm shadow-md hover:shadow-lg hover:-translate-y-0.5 transition-all no-underline">
                     Start Free Trial <i className="ri-arrow-right-line"></i>
                 </a>
             </div>

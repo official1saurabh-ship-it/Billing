@@ -102,7 +102,7 @@ const HeroPage = () => {
                 {/* Background Decorative Circles */}
                 <div className="absolute top-[-100px] md:top-[-200px] right-[-100px] md:right-[-200px] w-[400px] md:w-[700px] h-[400px] md:h-[700px] rounded-full bg-[radial-gradient(circle,rgba(200,32,45,0.06)_0%,transparent_70%)] pointer-events-none"></div>
                 <div className="absolute bottom-[-50px] md:bottom-[-100px] left-[-50px] md:left-[-100px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full bg-[radial-gradient(circle,rgba(200,149,42,0.08)_0%,transparent_70%)] pointer-events-none"></div>
-                
+
                 <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full relative z-10">
                     {/* Left Side: Content */}
                     <div className="flex flex-col items-center lg:items-start text-center lg:text-left order-2 lg:order-1">
@@ -354,7 +354,7 @@ const HeroPage = () => {
                         <div>
                             <h2 className="text-3xl font-extrabold text-gray-900 mb-6">Let's Talk Business</h2>
                             <p className="text-gray-500 mb-10">Have questions about features or pricing? Our team is ready to help you.</p>
-                            
+
                             <div className="space-y-8">
                                 {[
                                     { icon: "📍", title: "Visit Us", detail: "MG Road, Bengaluru, India" },
@@ -373,7 +373,7 @@ const HeroPage = () => {
                                 ))}
                             </div>
                         </div>
-                        
+
                         <div className="bg-[#FFF9F0] p-6 sm:p-10 rounded-3xl border border-gray-100">
                             <form className="space-y-4">
                                 <input type="text" placeholder="Full Name" className="w-full px-5 py-3 rounded-xl bg-white border border-gray-200 outline-none focus:border-[#C8202D] transition-colors" />
@@ -392,7 +392,7 @@ const HeroPage = () => {
             <Footer />
 
             {/* Floating CTA - Hidden on mobile */}
-            <a href="#signup" className="fixed bottom-8 right-8 z-[999] bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-3.5 rounded-full font-bold shadow-2xl hidden sm:flex items-center gap-2 hover:scale-105 transition-all animate-bounce-slow">
+            <a href="https://billing.biosoftech.in/register" className="fixed bottom-8 right-8 z-[999] bg-gradient-to-r from-red-600 to-red-800 text-white px-6 py-3.5 rounded-full font-bold shadow-2xl hidden sm:flex items-center gap-2 hover:scale-105 transition-all animate-bounce-slow">
                 🚀 Start Free Trial
             </a>
         </div>
