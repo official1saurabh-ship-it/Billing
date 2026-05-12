@@ -397,7 +397,150 @@ const HeroPage = () => {
                     </div>
                 </div>
             </section>
+            <section className="bg-[#F7EFE5] py-24 px-6">
 
+                <div className="max-w-6xl mx-auto text-center">
+
+                    {/* Badge */}
+                    <div className="inline-block border border-yellow-500 text-yellow-600 
+        rounded-full px-4 py-1 text-xs font-semibold tracking-widest mb-6">
+                        SUCCESS STORIES
+                    </div>
+
+                    {/* Heading */}
+                    <h2 className="text-4xl md:text-5xl font-extrabold text-[#1A0A00] mb-4">
+                        Loved by Indian Business Owners
+                    </h2>
+
+                    {/* Subtext */}
+                    <p className="text-gray-600 text-lg mb-16">
+                        Real stories from real businesses across India.
+                    </p>
+
+                    {/* Cards */}
+                    <div className="grid md:grid-cols-3 gap-8 text-left">
+
+                        {/* CARD 1 */}
+                        <div className="bg-[#F4E7D7] border border-[#E6CFAE] rounded-2xl p-6">
+
+                            {/* Stars */}
+                            <div className="text-yellow-500 mb-4">★★★★★</div>
+
+                            {/* Text */}
+                            <p className="text-sm text-[#3B2A1A] italic leading-relaxed mb-6">
+                                "Billing Mitra ne mera GST filing ka sab tension khatam kar diya.
+                                Pehle 2 ghante lagte the, ab 10 minute mein ho jaata hai.
+                                Bahut accha software hai!"
+                            </p>
+
+                            {/* User */}
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">
+                                    RS
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-[#1A0A00]">Ramesh Sharma</p>
+                                    <p className="text-xs text-gray-600">Kirana Store Owner, Jaipur</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* CARD 2 */}
+                        <div className="bg-[#F4E7D7] border border-[#E6CFAE] rounded-2xl p-6">
+
+                            <div className="text-yellow-500 mb-4">★★★★★</div>
+
+                            <p className="text-sm text-[#3B2A1A] italic leading-relaxed mb-6">
+                                "I run 3 restaurants and Billing Mitra manages all of them from one app.
+                                The inventory alerts and instant WhatsApp billing have been a complete
+                                game changer for us."
+                            </p>
+
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">
+                                    PM
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-[#1A0A00]">Priya Mehta</p>
+                                    <p className="text-xs text-gray-600">Restaurant Owner, Pune</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* CARD 3 */}
+                        <div className="bg-[#F4E7D7] border border-[#E6CFAE] rounded-2xl p-6">
+
+                            <div className="text-yellow-500 mb-4">★★★★★</div>
+
+                            <p className="text-sm text-[#3B2A1A] italic leading-relaxed mb-6">
+                                "As a distributor handling 500+ customers, I needed something robust.
+                                GSTR reports, party-wise ledger, e-way bills — everything in one place.
+                                Highly recommended!"
+                            </p>
+
+                            <div className="flex items-center gap-4">
+                                <div className="w-10 h-10 rounded-full bg-red-600 text-white flex items-center justify-center font-bold">
+                                    AG
+                                </div>
+                                <div>
+                                    <p className="font-semibold text-[#1A0A00]">Amit Gupta</p>
+                                    <p className="text-xs text-gray-600">Wholesale Distributor, Delhi</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+                {/* Bottom Divider */}
+
+
+            </section>
+            <section className="relative overflow-hidden bg-gradient-to-r from-[#C8202D] via-[#B71C1C] to-[#8B1A1A] py-24 px-6 text-center text-white">
+
+                {/* Background circles (subtle effect) */}
+                <div className="absolute inset-0 pointer-events-none">
+                    <div className="absolute w-[500px] h-[500px] bg-white/5 rounded-full top-[-100px] left-[-100px]"></div>
+                    <div className="absolute w-[500px] h-[500px] bg-white/5 rounded-full bottom-[-100px] right-[-100px]"></div>
+                </div>
+
+                <div className="relative max-w-4xl mx-auto">
+
+                    {/* Heading */}
+                    <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                        Start Managing Your Business Smarter Today
+                    </h2>
+
+                    {/* Subtext */}
+                    <p className="text-lg text-white/90 mb-10">
+                        Join 10,000+ Indian businesses already saving time, reducing
+                        errors, and staying GST-compliant with Billing Mitra.
+                    </p>
+
+                    {/* Buttons */}
+                    <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+                        {/* Primary Button */}
+                        <button className="bg-white text-[#C8202D] px-8 py-4 rounded-lg font-semibold 
+          shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
+                            🚀 Start Free Trial — No Card Needed
+                        </button>
+
+                        {/* Secondary Button */}
+                        <button className="border border-white/70 px-8 py-4 rounded-lg font-semibold 
+          hover:bg-white/10 transition flex items-center justify-center gap-2">
+                            ▶ Book a Free Demo
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+            <div class="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
             {/* Footer */}
             <Footer />
 

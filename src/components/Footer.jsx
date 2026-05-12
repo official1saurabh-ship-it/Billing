@@ -6,6 +6,7 @@ import restron from '../assets/Restron.jpeg'
 const Footer = () => {
     return (
         <footer className="bg-[#1A0500] text-gray-400 py-16 px-6">
+
             <div className="max-w-6xl mx-auto">
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-1">
