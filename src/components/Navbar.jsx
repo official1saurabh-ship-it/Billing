@@ -5,30 +5,16 @@ import restron from '../assets/Restron.jpeg'
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-    const [isVisible, setIsVisible] = useState(true);
-    const [lastScrollY, setLastScrollY] = useState(0);
     const location = useLocation();
 
     useEffect(() => {
         const handleScroll = () => {
-            const currentScrollY = window.scrollY;
-            
-            // Set scrolled state for background change
-            setScrolled(currentScrollY > 20);
-
-            // Handle visibility on scroll (hide on scroll down, show on scroll up)
-            if (currentScrollY > lastScrollY && currentScrollY > 100) {
-                setIsVisible(false);
-            } else {
-                setIsVisible(true);
-            }
-            
-            setLastScrollY(currentScrollY);
+            setScrolled(window.scrollY > 20);
         };
 
         window.addEventListener('scroll', handleScroll, { passive: true });
         return () => window.removeEventListener('scroll', handleScroll);
-    }, [lastScrollY]);
+    }, []);
 
     // Close menu when route changes
     useEffect(() => {
@@ -58,13 +44,11 @@ const Navbar = () => {
         <>
             {/* Backdrop Overlay */}
             <div 
-                className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[999] transition-opacity duration-300 md:hidden ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
+                className={`fixed inset-0 bg-black/40 backdrop-blur-sm z-[999] transition-opacity duration-300 lg:hidden ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}`}
                 onClick={() => setIsMenuOpen(false)}
             />
 
-            <nav className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-500 border-b ${
-                !isVisible && !isMenuOpen ? '-translate-y-full' : 'translate-y-0'
-            } ${
+            <nav className={`fixed top-0 left-0 right-0 z-[1000] transition-all duration-300 border-b ${
                 scrolled || isMenuOpen 
                 ? 'bg-white/95 backdrop-blur-md shadow-lg border-gray-200 h-[70px]' 
                 : 'bg-[#FFF9F0]/95 backdrop-blur-md border-[#E8D5B0]/80 h-[80px]'

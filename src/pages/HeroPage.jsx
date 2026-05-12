@@ -397,7 +397,7 @@ const HeroPage = () => {
                     </div>
                 </div>
             </section>
-            <section className="bg-[#F7EFE5] py-24 px-6">
+            <section className="bg-[#F7EFE5] py-24 px-6" id="reviews">
 
                 <div className="max-w-6xl mx-auto text-center">
 
