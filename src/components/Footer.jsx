@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import restron from '../assets/Restron.jpeg'
+
 
 const Footer = () => {
     return (
@@ -8,7 +10,7 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 gap-12 mb-12">
                     <div className="col-span-1 md:col-span-1">
                         <Link to="/" className="flex items-center gap-3 text-white font-bold text-2xl mb-6 no-underline">
-                            <div className="w-10 h-10 rounded-lg bg-red-600 flex items-center justify-center">B</div>
+                            <img src={restron} alt="" className='w-8 h-8' />
                             BillingMitra
                         </Link>
                         <p className="text-sm leading-relaxed mb-6">India's most trusted GST billing and business management software. Built for retailers, restaurants, wholesalers, and SMEs across India.</p>

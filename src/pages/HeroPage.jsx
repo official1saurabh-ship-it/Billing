@@ -324,7 +324,7 @@ const HeroPage = () => {
                             { name: "Pro", price: "999", popular: true, features: ["Everything in Basic", "GSTR Reports", "E-way Bills", "3 Users"] },
                             { name: "Business", price: "1999", features: ["Everything in Pro", "Multi-Business", "Unlimited Users", "Priority Support"] }
                         ].map((plan, i) => (
-                            <div key={i} className={`bg-white rounded-3xl p-8 border ${plan.popular ? 'border-[#C8202D] shadow-2xl scale-105 relative z-10' : 'border-gray-100 shadow-sm'}`}>
+                            <div key={i} className={`bg-white rounded-3xl p-8 border ${plan.popular ? 'border-[#C8202D] shadow-2xl scale-105 relative z-10' : 'border-[#C8202D] shadow-2xl scale-105 relative z-10'}`}>
                                 {plan.popular && <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#C8202D] text-white px-4 py-1 rounded-full text-[10px] font-bold">MOST POPULAR</span>}
                                 <h3 className="text-lg font-bold text-gray-900 mb-2">{plan.name}</h3>
                                 <div className="flex items-baseline gap-1 mb-6">
@@ -338,7 +338,7 @@ const HeroPage = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <a href="#signup" className={`block w-full py-3 rounded-xl font-bold text-center no-underline transition-all ${plan.popular ? 'bg-[#C8202D] text-white shadow-lg shadow-red-200' : 'bg-gray-50 text-gray-800 hover:bg-gray-100'}`}>
+                                <a href="https://billing.biosoftech.in/register" className={`block w-full py-3 rounded-xl font-bold text-center no-underline transition-all ${plan.popular ? 'bg-[#C8202D] text-white shadow-lg shadow-red-200' : 'bg-gray-50 text-gray-800 hover:bg-gray-100'}`}>
                                     Get Started
                                 </a>
                             </div>
