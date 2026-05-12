@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom';
+import restron from '../assets/Restron.jpeg'
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -13,11 +14,10 @@ const Navbar = () => {
     }, []);
 
     return (
-        <nav className={`fixed top-0 left-0 right-0 z-[1000] px-8 h-[70px] flex items-center justify-between transition-all duration-300 border-b ${
-            scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-gray-200' : 'bg-[#FFF9F0]/95 backdrop-blur-md border-[#E8D5B0]/80'
-        }`}>
+        <nav className={`fixed top-0 left-0 right-0 z-[1000] px-8 h-[70px] flex items-center justify-between transition-all duration-300 border-b ${scrolled ? 'bg-white/95 backdrop-blur-md shadow-lg border-gray-200' : 'bg-[#FFF9F0]/95 backdrop-blur-md border-[#E8D5B0]/80'
+            }`}>
             <Link to="/" className="flex items-center gap-2.5 no-underline">
-                <div className="w-10 h-10 rounded-lg bg-red-600 flex items-center justify-center text-white font-bold text-xl">B</div>
+                <img src={restron} alt="" className='w-8 h-8' />
                 <span className="font-['Sora'] font-extrabold text-xl text-[#1A0A00]">Billing<span className="text-[#C8202D]">Mitra</span></span>
             </Link>
 
