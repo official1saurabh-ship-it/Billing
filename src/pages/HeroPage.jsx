@@ -1,5 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
+import final from '../assets/final dashboard.png';
+
 
 const HeroPage = () => {
     const featuresData = [
@@ -143,20 +145,21 @@ const HeroPage = () => {
 
                     {/* Right Side: Visual */}
                     <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
-                        {/* Main Dashboard Card */}
+                        <img src={final} alt="" className="w-full" />
+                        {/* Main Dashboard Card
                         <div className="relative bg-white rounded-[20px] shadow-2xl border border-[#E8D5B0] overflow-hidden lg:[transform:perspective(1000px)_rotateY(-8deg)_rotateX(3deg)] lg:hover:[transform:perspective(1000px)_rotateY(-4deg)_rotateX(1deg)] transition-transform duration-500">
-                            {/* Mockup Header */}
-                            <div className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] p-3 sm:p-4 flex items-center gap-3">
+                            Mockup Header */}
+                        {/* <div className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] p-3 sm:p-4 flex items-center gap-3">
                                 <div className="flex gap-1.5">
                                     <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]"></span>
                                     <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]"></span>
                                     <span className="w-2.5 h-2.5 rounded-full bg-[#28C840]"></span>
                                 </div>
                                 <span className="text-white/80 text-[10px] sm:text-xs font-semibold font-['Sora']">Billing Mitra — Dashboard</span>
-                            </div>
+                            </div> */}
 
-                            {/* Mockup Body */}
-                            <div className="p-4 sm:p-5 bg-[#FFF9F0]">
+                        {/* Mockup Body */}
+                        {/* <div className="p-4 sm:p-5 bg-[#FFF9F0]">
                                 <div className="grid grid-cols-3 gap-2 sm:gap-3 mb-4">
                                     {[
                                         { label: "Today's Sales", val: "₹48,250", color: "text-[#1B8C4E]" },
@@ -168,10 +171,10 @@ const HeroPage = () => {
                                             <p className={`text-xs sm:text-sm font-bold font-['Sora'] ${stat.color}`}>{stat.val}</p>
                                         </div>
                                     ))}
-                                </div>
+                                </div> */}
 
-                                {/* Recent Invoices */}
-                                <div className="bg-white p-3 sm:p-4 rounded-xl border border-[#E8D5B0] mb-4">
+                        {/* Recent Invoices */}
+                        {/* <div className="bg-white p-3 sm:p-4 rounded-xl border border-[#E8D5B0] mb-4">
                                     <p className="text-[10px] sm:text-[11px] font-bold text-gray-900 mb-2 sm:mb-3 font-['Sora']">Recent Invoices</p>
                                     {[
                                         { name: 'Sharma Electronics', amt: '₹6,720', status: 'Paid', statusClass: 'bg-[#D1FAE5] text-[#065F46]' },
@@ -185,39 +188,41 @@ const HeroPage = () => {
                                             </div>
                                         </div>
                                     ))}
-                                </div>
+                                </div> */}
 
-                                {/* Mini Chart */}
-                                <div className="bg-white p-3 rounded-xl border border-[#E8D5B0]">
+                        {/* Mini Chart */}
+                        {/* <div className="bg-white p-3 rounded-xl border border-[#E8D5B0]">
                                     <p className="text-[9px] sm:text-[10px] font-bold text-[#6B5040] mb-3">Weekly Revenue (₹)</p>
                                     <div className="flex items-end gap-1.5 h-10 sm:h-12">
                                         {[40, 65, 55, 80, 70, 90, 100].map((h, i) => (
                                             <div key={i} style={{ height: `${h}%` }} className="flex-1 bg-linear-[135deg,#C8202D_0%,#C8952A_100%] rounded-t-sm opacity-80 transition-opacity"></div>
                                         ))}
                                     </div>
-                                </div>
-                            </div>
-                        </div>
+                                </div> */}
+                        {/* </div>
+                        // </div> */}
+
 
                         {/* Floating Badges - Hidden on very small screens */}
-                        <div className="absolute -top-5 -left-5 z-20 bg-white p-2 rounded-xl shadow-[0_8px_32px_rgba(200,32,45,0.15)] border border-[#E8D5B0] hidden md:flex items-center gap-2 animate-float">
+                        {/* <div className="absolute -top-5 -left-5 z-20 bg-white p-2 rounded-xl shadow-[0_8px_32px_rgba(200,32,45,0.15)] border border-[#E8D5B0] hidden md:flex items-center gap-2 animate-float">
                             <div className="w-8 h-8 rounded-lg bg-[#D1FAE5] flex items-center justify-center text-sm">✅</div>
                             <div>
                                 <p className="text-[10px] font-bold text-gray-900 font-['Sora']">Invoice Sent!</p>
                             </div>
-                        </div>
-                        <div className="absolute -bottom-5 -right-5 z-20 bg-white p-2 rounded-xl shadow-[0_8px_32px_rgba(200,32,45,0.15)] border border-[#E8D5B0] hidden md:flex items-center gap-2 animate-float [animation-delay:1.5s]">
+                        </div> */}
+                        {/* <div className="absolute -bottom-5 -right-5 z-20 bg-white p-2 rounded-xl shadow-[0_8px_32px_rgba(200,32,45,0.15)] border border-[#E8D5B0] hidden md:flex items-center gap-2 animate-float [animation-delay:1.5s]">
                             <div className="w-8 h-8 rounded-lg bg-[#FEF3DC] flex items-center justify-center text-sm">📊</div>
                             <div>
                                 <p className="text-[10px] font-bold text-gray-900 font-['Sora']">GSTR-3B Ready</p>
                             </div>
-                        </div>
+                        </div> */}
                     </div>
+
                 </div>
-            </section>
+            </section >
 
             {/* Trust Section */}
-            <div class="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
+            <div className="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]" ></div>
             <section className="py-12 md:py-16 px-6 bg-white border-y border-[#E8D5B0]">
                 <div className="max-w-6xl mx-auto text-center">
                     <p className="text-xs sm:text-sm font-semibold text-[#6B5040] tracking-widest uppercase mb-8">
@@ -232,7 +237,7 @@ const HeroPage = () => {
                     </div>
                 </div>
             </section>
-            <div class="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
+            <div className="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
 
             {/* Features Section */}
             <section className="bg-[#FFF9F0] py-16 md:py-24 px-6" id="features">
@@ -524,14 +529,16 @@ const HeroPage = () => {
                     <div className="flex flex-col sm:flex-row justify-center gap-4">
 
                         {/* Primary Button */}
-                        <button className="bg-white text-[#C8202D] px-8 py-4 rounded-lg font-semibold 
+                        <a href="https://billing.biosoftech.in/register">
+                            <button className="bg-white text-[#C8202D] px-8 py-4 rounded-lg font-semibold 
           shadow-md hover:shadow-lg transition flex items-center justify-center gap-2">
-                            🚀 Start Free Trial — No Card Needed
-                        </button>
+                                🚀 Start Free Trial — No Card Needed
+                            </button>
+                        </a>
 
                         {/* Secondary Button */}
                         <button className="border border-white/70 px-8 py-4 rounded-lg font-semibold 
-          hover:bg-white/10 transition flex items-center justify-center gap-2">
+          hover:bg-white/10 transition flex items-center justify-center gap-2" id='contact'>
                             ▶ Book a Free Demo
                         </button>
 
@@ -548,7 +555,7 @@ const HeroPage = () => {
             <a href="https://billing.biosoftech.in/register" className="fixed bottom-8 right-8 z-[999] bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-6 py-3.5 rounded-full font-bold shadow-2xl hidden sm:flex items-center gap-2 hover:scale-105 transition-all animate-bounce-slow">
                 🚀 Start Free Trial
             </a>
-        </div>
+        </div >
     );
 };
 
