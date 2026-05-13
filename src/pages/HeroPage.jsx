@@ -100,7 +100,7 @@ const HeroPage = () => {
     return (
         <div className="overflow-x-hidden font-['DM_Sans']">
             {/* Hero Section */}
-            <section className="relative min-h-screen pt-28 md:pt-36 pb-16 md:pb-24 px-4 md:px-8 bg-linear-[160deg,#FFF5E8_0%,#FFF0DC_40%,#FFF9F0_100%] flex items-center overflow-hidden">
+            <section className="relative min-h-screen pt-28 md:pt-36 pb-16 md:pb-24 px-4 md:px-8 bg-hero-gradient flex items-center overflow-hidden">
                 {/* Background Decorative Circles */}
                 <div className="absolute top-[-100px] md:top-[-200px] right-[-100px] md:right-[-200px] w-[400px] md:w-[700px] h-[400px] md:h-[700px] rounded-full bg-[radial-gradient(circle,rgba(200,32,45,0.06)_0%,transparent_70%)] pointer-events-none"></div>
                 <div className="absolute bottom-[-50px] md:bottom-[-100px] left-[-50px] md:left-[-100px] w-[300px] md:w-[500px] h-[300px] md:h-[500px] rounded-full bg-[radial-gradient(circle,rgba(200,149,42,0.08)_0%,transparent_70%)] pointer-events-none"></div>
@@ -115,7 +115,7 @@ const HeroPage = () => {
 
                         {/* Heading */}
                         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-[1.15] mb-6 font-['Sora']">
-                            India's Smart <span className="text-transparent bg-clip-text bg-linear-[135deg,#C8202D_0%,#C8952A_100%]">GST Billing</span> & Business Management Software
+                            India's Smart <span className="text-transparent bg-clip-text bg-brand-soft">GST Billing</span> & Business Management Software
                         </h1>
 
                         {/* Subtext */}
@@ -125,7 +125,7 @@ const HeroPage = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 mb-10 w-full sm:w-auto">
-                            <a href="https://billing.biosoftech.in/register" className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center justify-center gap-2 no-underline font-['Sora']">
+                            <a href="https://billing.biosoftech.in/register" className="bg-brand-gradient text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center justify-center gap-2 no-underline font-['Sora']">
                                 🚀 Start Free Trial
                             </a>
                             <a href="#contact" className="bg-white text-gray-800 border border-[#E8D5B0] px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:-translate-y-0.5 hover:border-[#C8952A] hover:text-[#C8952A] hover:shadow-[0_4px_20px_rgba(200,149,42,0.15)] flex items-center justify-center gap-2 no-underline font-['Sora']">
@@ -150,7 +150,7 @@ const HeroPage = () => {
                         {/* Main Dashboard Card
                         <div className="relative bg-white rounded-[20px] shadow-2xl border border-[#E8D5B0] overflow-hidden lg:[transform:perspective(1000px)_rotateY(-8deg)_rotateX(3deg)] lg:hover:[transform:perspective(1000px)_rotateY(-4deg)_rotateX(1deg)] transition-transform duration-500">
                             Mockup Header */}
-                        {/* <div className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] p-3 sm:p-4 flex items-center gap-3">
+                        {/* <div className="bg-brand-gradient p-3 sm:p-4 flex items-center gap-3">
                                 <div className="flex gap-1.5">
                                     <span className="w-2.5 h-2.5 rounded-full bg-[#FF5F57]"></span>
                                     <span className="w-2.5 h-2.5 rounded-full bg-[#FEBC2E]"></span>
@@ -196,7 +196,7 @@ const HeroPage = () => {
                                     <p className="text-[9px] sm:text-[10px] font-bold text-[#6B5040] mb-3">Weekly Revenue (₹)</p>
                                     <div className="flex items-end gap-1.5 h-10 sm:h-12">
                                         {[40, 65, 55, 80, 70, 90, 100].map((h, i) => (
-                                            <div key={i} style={{ height: `${h}%` }} className="flex-1 bg-linear-[135deg,#C8202D_0%,#C8952A_100%] rounded-t-sm opacity-80 transition-opacity"></div>
+                                            <div key={i} style={{ height: `${h}%` }} className="flex-1 bg-brand-soft rounded-t-sm opacity-80 transition-opacity"></div>
                                         ))}
                                     </div>
                                 </div> */}
@@ -256,7 +256,7 @@ const HeroPage = () => {
                     </div>
                     <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                         {featuresData.map((feat, i) => (
-                            <div key={i} className="bg-white rounded-2xl border border-[#E8D5B0] p-6 md:p-8 hover:shadow-2xl transition-all group relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-linear-[135deg,#C8202D_0%,#C8952A_100%] before:rounded-t-2xl">
+                            <div key={i} className="bg-white rounded-2xl border border-[#E8D5B0] p-6 md:p-8 hover:shadow-2xl transition-all group relative overflow-hidden before:absolute before:top-0 before:left-0 before:right-0 before:h-[3px] before:bg-brand-soft before:rounded-t-2xl">
                                 <div className={`w-12 h-12 rounded-xl flex items-center justify-center text-xl mb-6 ${feat.ic_bg}`}>
                                     {feat.icon}
                                 </div>
@@ -265,7 +265,7 @@ const HeroPage = () => {
                                 <ul className="space-y-3">
                                     {feat.items.slice(0, 4).map((item, idx) => (
                                         <li key={idx} className="flex items-center gap-2 text-[0.88rem] text-gray-700">
-                                            <span className="w-5 h-5 flex items-center justify-center rounded-full text-white text-[0.7rem] bg-linear-[135deg,#C8202D_0%,#C8952A_100%]">✓</span>
+                                            <span className="w-5 h-5 flex items-center justify-center rounded-full text-white text-[0.7rem] bg-brand-soft">✓</span>
                                             {item}
                                         </li>
                                     ))}
@@ -297,7 +297,7 @@ const HeroPage = () => {
                                 { title: "Secure Data", desc: "Bank-grade cloud security.", icon: "💸" }
                             ].map((item, i) => (
                                 <div key={i} className="bg-[#FFF9F0] p-4 rounded-xl border border-[#E8D5B0] flex items-center gap-4 transition-all hover:border-[#C8202D] hover:shadow-lg group">
-                                    <div className="w-12 h-12 rounded-lg bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] flex items-center justify-center text-white text-xl flex-shrink-0">
+                                    <div className="w-12 h-12 rounded-lg bg-brand-gradient flex items-center justify-center text-white text-xl flex-shrink-0">
                                         {item.icon}
                                     </div>
                                     <div>
@@ -315,8 +315,8 @@ const HeroPage = () => {
                             { num: "99.9%", label: "Uptime" },
                             { num: "4.8★", label: "Rating" }
                         ].map((stat, i) => (
-                            <div key={i} className="bg-white p-6 sm:p-8 border border-[#E8D5B0] rounded-2xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-linear-[135deg,#C8202D_0%,#C8952A_100%] group cursor-default">
-                                <p className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-linear-[135deg,#C8202D_0%,#C8952A_100%] mb-1 transition-colors group-hover:text-white group-hover:bg-none font-['Sora']">{stat.num}</p>
+                            <div key={i} className="bg-white p-6 sm:p-8 border border-[#E8D5B0] rounded-2xl text-center transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:bg-brand-soft group cursor-default">
+                                <p className="text-2xl sm:text-3xl font-bold text-transparent bg-clip-text bg-brand-soft mb-1 transition-colors group-hover:text-white group-hover:bg-none font-['Sora']">{stat.num}</p>
                                 <p className="text-[10px] sm:text-xs text-[#6B5040] uppercase tracking-wider transition-colors group-hover:text-white/80">{stat.label}</p>
                             </div>
                         ))}
@@ -341,7 +341,7 @@ const HeroPage = () => {
                             { name: "Business", price: "1999", features: ["Everything in Pro", "Multi-Business", "Unlimited Users", "Priority Support"] }
                         ].map((plan, i) => (
                             <div key={i} className={`bg-white rounded-3xl p-8 border transition-all hover:shadow-2xl ${plan.popular ? 'border-[#C8202D] shadow-2xl scale-105 relative z-10' : 'border-[#E8D5B0] shadow-sm'}`}>
-                                {plan.popular && <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-6 py-1 rounded-full text-xs font-bold whitespace-nowrap shadow-lg shadow-red-200">⭐ MOST POPULAR</span>}
+                                {plan.popular && <span className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-gradient text-white px-6 py-1 rounded-full text-xs font-bold whitespace-nowrap shadow-lg shadow-red-200">⭐ MOST POPULAR</span>}
                                 <h3 className={`text-lg font-bold mb-2 font-['Sora'] ${plan.popular ? 'text-[#C8202D]' : 'text-[#6B5040]'}`}>{plan.name}</h3>
                                 <div className="flex items-baseline gap-1 mb-6">
                                     <span className="text-4xl font-extrabold font-['Sora'] text-gray-900">₹{plan.price}</span>
@@ -354,7 +354,7 @@ const HeroPage = () => {
                                         </li>
                                     ))}
                                 </ul>
-                                <a href="https://billing.biosoftech.in/register" className={`block w-full py-3 rounded-xl font-bold text-center no-underline transition-all font-['Sora'] ${plan.popular ? 'bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white shadow-lg shadow-red-200 hover:shadow-red-300' : 'bg-white border-[1.5px] border-[#E8D5B0] text-gray-800 hover:border-[#C8202D] hover:text-[#C8202D]'}`}>
+                                <a href="https://billing.biosoftech.in/register" className={`block w-full py-3 rounded-xl font-bold text-center no-underline transition-all font-['Sora'] ${plan.popular ? 'bg-brand-gradient text-white shadow-lg shadow-red-200 hover:shadow-red-300' : 'bg-white border-[1.5px] border-[#E8D5B0] text-gray-800 hover:border-[#C8202D] hover:text-[#C8202D]'}`}>
                                     {plan.name === 'Business' ? 'Contact Sales' : 'Get Started'}
                                 </a>
                             </div>
@@ -395,7 +395,7 @@ const HeroPage = () => {
                                 <input type="text" placeholder="Full Name" className="w-full px-5 py-3 rounded-xl bg-white border border-[#E8D5B0] outline-none focus:border-[#C8202D] transition-colors" />
                                 <input type="tel" placeholder="Phone Number" className="w-full px-5 py-3 rounded-xl bg-white border border-[#E8D5B0] outline-none focus:border-[#C8202D] transition-colors" />
                                 <textarea rows="4" placeholder="Your Message" className="w-full px-5 py-3 rounded-xl bg-white border border-[#E8D5B0] outline-none focus:border-[#C8202D] transition-colors resize-none"></textarea>
-                                <button className="w-full py-4 bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white rounded-xl font-bold shadow-lg shadow-red-200 hover:-translate-y-0.5 transition-all font-['Sora']">
+                                <button className="w-full py-4 bg-brand-gradient text-white rounded-xl font-bold shadow-lg shadow-red-200 hover:-translate-y-0.5 transition-all font-['Sora']">
                                     Send Message
                                 </button>
                             </form>
@@ -548,12 +548,12 @@ const HeroPage = () => {
                 </div>
 
             </section>
-            <div class="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
+            <div className="h-1 bg-gradient-to-r from-[#FBBF24] to-[#F59E0B]"></div>
             {/* Footer */}
             <Footer />
 
             {/* Floating CTA - Hidden on mobile */}
-            <a href="https://billing.biosoftech.in/register" className="fixed bottom-8 right-8 z-[999] bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-6 py-3.5 rounded-full font-bold shadow-2xl hidden sm:flex items-center gap-2 hover:scale-105 transition-all animate-bounce-slow">
+            <a href="https://billing.biosoftech.in/register" className="fixed bottom-8 right-8 z-[999] bg-brand-gradient text-white px-6 py-3.5 rounded-full font-bold shadow-2xl hidden sm:flex items-center gap-2 hover:scale-105 transition-all animate-bounce-slow">
                 🚀 Start Free Trial
             </a>
         </div >
