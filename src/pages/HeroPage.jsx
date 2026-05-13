@@ -146,6 +146,7 @@ const HeroPage = () => {
                     {/* Right Side: Visual */}
                     <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
                         <img src={final} alt="" className="w-full" />
+
                         {/* Main Dashboard Card
                         <div className="relative bg-white rounded-[20px] shadow-2xl border border-[#E8D5B0] overflow-hidden lg:[transform:perspective(1000px)_rotateY(-8deg)_rotateX(3deg)] lg:hover:[transform:perspective(1000px)_rotateY(-4deg)_rotateX(1deg)] transition-transform duration-500">
                             Mockup Header */}
