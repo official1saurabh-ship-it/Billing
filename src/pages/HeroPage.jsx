@@ -125,7 +125,7 @@ const HeroPage = () => {
 
                         {/* CTAs */}
                         <div className="flex flex-col sm:flex-row flex-wrap justify-center lg:justify-start gap-4 mb-10 w-full sm:w-auto">
-                            <a href="#signup" className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center justify-center gap-2 no-underline font-['Sora']">
+                            <a href="https://billing.biosoftech.in/register" className="bg-linear-[135deg,#C8202D_0%,#A01520_50%,#7A0F18_100%] text-white px-8 py-3.5 rounded-xl font-bold text-lg shadow-[0_4px_20px_rgba(200,32,45,0.3)] transition-all hover:-translate-y-0.5 hover:shadow-[0_8px_32px_rgba(200,32,45,0.45)] flex items-center justify-center gap-2 no-underline font-['Sora']">
                                 🚀 Start Free Trial
                             </a>
                             <a href="#contact" className="bg-white text-gray-800 border border-[#E8D5B0] px-8 py-3.5 rounded-xl font-bold text-lg transition-all hover:-translate-y-0.5 hover:border-[#C8952A] hover:text-[#C8952A] hover:shadow-[0_4px_20px_rgba(200,149,42,0.15)] flex items-center justify-center gap-2 no-underline font-['Sora']">
