@@ -1,16 +1,54 @@
-# React + Vite
+# Billing Mitra — Sales & Billing Software
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Smart GST billing and business management software built for Indian businesses. Manage billing, inventory, accounting, and compliance in one platform.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React 19** + **Vite 7**
+- **TailwindCSS 4** for styling
+- **React Router 7** for routing
+- **Remix Icons**
 
-## React Compiler
+## Getting Started
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```bash
+npm install
+npm run dev
+```
 
-## Expanding the ESLint configuration
+## Available Scripts
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Command          | Description                     |
+| ---------------- | ------------------------------- |
+| `npm run dev`    | Start development server        |
+| `npm run build`  | Build for production            |
+| `npm run preview`| Preview production build        |
+| `npm run lint`   | Run ESLint                      |
+
+## Project Structure
+
+```
+src/
+├── assets/          # Static assets (images, etc.)
+├── components/      # Reusable components (Navbar, Footer)
+├── pages/           # Page components (HeroPage, policy pages)
+├── App.jsx          # Root component with routing
+├── Home.jsx         # Home entry point
+├── main.jsx         # App entry point
+└── index.css        # Global styles
+```
+
+## Pages
+
+- `/` — Hero / Landing page
+- `/privacy-policy`
+- `/refund-policy`
+- `/terms-of-service`
+
+## Deployment
+
+```bash
+npm run build
+```
+
+The output will be in the `dist/` folder, ready to deploy to any static hosting.
