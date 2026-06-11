@@ -1,0 +1,55 @@
+@import "tailwindcss";
+@import "remixicon/fonts/remixicon.css";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'DM Sans', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Sora', sans-serif;
+  }
+}
+
+@theme {
+  --animate-bounce-slow: bounce-slow 3s linear infinite;
+  --animate-fade-in-up: fade-in-up 0.8s ease-out forwards;
+  --animate-float: float 4s ease-in-out infinite;
+
+  --background-image-brand-gradient: linear-gradient(135deg, #C8202D 0%, #A01520 50%, #7A0F18 100%);
+  --background-image-hero-gradient: linear-gradient(160deg, #FFF5E8 0%, #FFF0DC 40%, #FFF9F0 100%);
+  --background-image-brand-soft: linear-gradient(135deg, #C8202D 0%, #C8952A 100%);
+
+  @keyframes bounce-slow {
+    0%, 100% {
+      transform: translateY(-5%);
+      animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+    }
+    50% {
+      transform: translateY(0);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+  }
+}
